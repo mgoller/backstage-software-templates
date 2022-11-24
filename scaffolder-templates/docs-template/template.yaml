@@ -46,7 +46,7 @@ spec:
           ui:field: RepoUrlPicker
           ui:options:
             allowedHosts:
-              - github.org
+              - github.com
 
   # This template is meant to be used on top of an existing template.
   # By adding the following and fetching from an absolute URL you can
@@ -67,7 +67,7 @@ spec:
       name: Publish
       action: publish:github
       input:
-        allowedHosts: ["github.org"]
+        allowedHosts: ["github.com"]
         description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
 
